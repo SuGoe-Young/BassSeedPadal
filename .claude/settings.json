@@ -1,0 +1,16 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "\"$CLAUDE_PROJECT_DIR\"/.claude/hooks/build.sh",
+            "timeout": 120,
+            "statusMessage": "編譯 active_project..."
+          }
+        ]
+      }
+    ]
+  }
+}
