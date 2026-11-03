@@ -23,3 +23,16 @@ desktop.ini
 
 note/
 me_and_claude_cowork_status/
+
+# ── Claude Code 的個人／單機設定 ──────────────────────
+# 專案共用的設定（hook、skill、agent）要進版控，只有這個不進：
+# 它是每台電腦各自的權限覆寫。
+.claude/settings.local.json
+
+# ── 單機狀態 / 編輯器自動產生的檔案 ────────────────────
+# active_project：「現在在做哪一支」，每換專案就變，hook 讀它但不需要進版控
+.claude/active_project
+# VSCode 外掛自動產生，內含這台電腦的絕對路徑
+.vscode/
+# 手動備份
+*.bak
